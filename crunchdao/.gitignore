@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+data/
+resources/*.joblib
+resources/*.lgb
+resources/*.txt
+.crunch/
+.crunchdao/
+.venv/
+*.parquet
+*.csv

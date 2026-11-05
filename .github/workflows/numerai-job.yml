@@ -1,0 +1,85 @@
+name: Numerai — job
+
+# Reusable job behind Numerai tournament workflows.
+# Runs the quantitative ML engine in numerai/ on a GitHub runner.
+
+on:
+  workflow_call:
+    inputs:
+      command:
+        type: string
+        required: true
+        default: 'run'
+      model:
+        type: string
+        required: false
+        default: 'royverse'
+      force:
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  numerai:
+    name: Numerai · ${{ inputs.command }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    concurrency:
+      group: numerai-${{ inputs.model }}-${{ inputs.command }}
+      cancel-in-progress: false
+    defaults:
+      run:
+        working-directory: numerai
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: numerai
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: numerai/requirements.txt
+
+      - name: Restore trained model cache
+        id: cache-model-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: numerai/models
+          key: numerai-model-ensemble-v53-${{ hashFiles('numerai/nfa_numerai/config.py', 'numerai/nfa_numerai/model.py') }}
+          restore-keys: |
+            numerai-model-ensemble-v53-
+
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Run Numerai Pipeline
+        env:
+          COMMAND: ${{ inputs.command }}
+          NUMERAI_MODEL: ${{ inputs.model }}
+          FORCE: ${{ inputs.force }}
+          NUMERAI_PUBLIC_ID: ${{ secrets.NUMERAI_PUBLIC_ID }}
+          NUMERAI_SECRET_KEY: ${{ secrets.NUMERAI_SECRET_KEY }}
+          NUMERAI_MCP_AUTH: ${{ secrets.NUMERAI_MCP_AUTH }}
+        run: |
+          case "$COMMAND" in
+            run)
+              set -- run --model "$NUMERAI_MODEL"
+              if [ "$FORCE" = "true" ]; then set -- "$@" --force; fi
+              ;;
+            smoke) set -- smoke ;;
+            status) set -- status --model "$NUMERAI_MODEL" ;;
+            *) echo "Unknown command: $COMMAND"; exit 2 ;;
+          esac
+          python -m nfa_numerai.cli "$@"
+
+      - name: Save trained model cache
+        if: steps.cache-model-restore.outputs.cache-hit != 'true' && hashFiles('numerai/models/lgb_ensemble_v53.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: numerai/models
+          key: ${{ steps.cache-model-restore.outputs.cache-primary-key }}
+

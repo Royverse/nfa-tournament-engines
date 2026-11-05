@@ -1,0 +1,52 @@
+name: CrunchDAO — run
+
+# Pushes model code to a CrunchDAO competition (default: DataCrunch-2).
+#
+# Manual only. DataCrunch-2 is a code competition: CrunchDAO re-runs the
+# submitted code on its own infrastructure every weekly round, so a weekly
+# re-push adds nothing. The Friday/Saturday schedule that used to live here
+# failed on every run from 2026-10-16 to 2026-10-31 (workspace setup), so it
+# was spending minutes to produce a red X. Run it from the Actions tab when
+# the model code changes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'Command to execute (run, test, smoke, status)'
+        required: true
+        default: 'run'
+        type: choice
+        options:
+          - run
+          - test
+          - smoke
+          - status
+      competition:
+        description: 'CrunchDAO competition name'
+        required: false
+        default: 'datacrunch-2'
+        type: string
+      model:
+        description: 'Model slot name'
+        required: false
+        default: 'royverse'
+        type: string
+      force:
+        description: 'Force execution despite non-critical warnings'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    uses: ./.github/workflows/crunchdao-job.yml
+    with:
+      command: ${{ inputs.command }}
+      competition: ${{ inputs.competition }}
+      model: ${{ inputs.model }}
+      force: ${{ inputs.force }}
+    secrets: inherit

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "udAUupudlE",
+    "question": "Will the Fed cut rates by at least 25 bps at the Oct. 28, 2026 FOMC meeting?",
+    "url": "https://manifold.markets/CalibratedGhosts/will-the-fed-cut-rates-by-at-least-gsyCdSpcsg",
+    "probability": 0.010000000000000004,
+    "uniqueBettorCount": 8,
+    "closeTime": 1793211900000,
+    "isResolved": false,
+    "outcomeType": "BINARY",
+    "volume": 1045.15472120605
+  },
+  {
+    "id": "CO0N90hQdd",
+    "question": "Will Bitcoin exceed $100,000 before December 31, 2026?",
+    "url": "https://manifold.markets/PhamThanhat/will-bitcoin-exceed-100000-before-d",
+    "probability": 0.37,
+    "uniqueBettorCount": 24,
+    "closeTime": 1798675140000,
+    "isResolved": false,
+    "outcomeType": "BINARY",
+    "volume": 1768.6087549731228
+  },
+  {
+    "id": "Oq9QQL8s9s",
+    "question": "Will the S&P500 be greater than $8000 in 2026?",
+    "url": "https://manifold.markets/KrishPatel/will-the-sp500-be-greater-than-8000",
+    "probability": 0.5355487763620892,
+    "uniqueBettorCount": 34,
+    "closeTime": 1798779540000,
+    "isResolved": false,
+    "outcomeType": "BINARY",
+    "volume": 4175.782757903734
+  },
+  {
+    "id": "Q0cpgu9O2A",
+    "question": "Will the U.S. Federal Reserve cut interest rates at least 3 times before December 31, 2026?",
+    "url": "https://manifold.markets/Ding/will-the-us-federal-reserve-cut-int",
+    "probability": 0.009999999999999986,
+    "uniqueBettorCount": 15,
+    "closeTime": 1798675140000,
+    "isResolved": false,
+    "outcomeType": "BINARY",
+    "volume": 1228.7308332004095
+  }
+]

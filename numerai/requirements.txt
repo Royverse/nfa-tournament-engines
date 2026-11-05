@@ -1,0 +1,9 @@
+# Runtime dependencies of the Numerai quantitative tournament engine
+# Runs on Python 3.12 (matches Numerai's compute runtime)
+numerapi>=3.1.1
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+lightgbm>=4.0.0
+pyarrow>=15.0.0
+requests>=2.30.0

@@ -1,0 +1,644 @@
+{
+  "trades": [
+    {
+      "proxyWallet": "0x57b4520916577bfb64f93cdee2eba6709301b46b",
+      "side": "SELL",
+      "asset": "100741494720227997942059320684054085947750594102834739428422170461278695013039",
+      "conditionId": "0x043fb9c6e032171863f5cf0e73709e8e0302bfcaec1dde5cc9af1b0898d99a8f",
+      "size": 8615.07,
+      "price": 0.999,
+      "timestamp": 1791736518,
+      "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+      "slug": "dota2-ty-ts8-2026-10-11-game2",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/dota2-7ffacddb21.jpg",
+      "eventSlug": "dota2-ty-ts8-2026-10-11",
+      "outcome": "Team Yandex",
+      "outcomeIndex": 0,
+      "name": "Skyfker",
+      "pseudonym": "Entire-Inn",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0x3a23bb881b04a088a45da540dc6e2a52f74bcedb550e65a3540064fad50e3056"
+    },
+    {
+      "proxyWallet": "0xd487f513cfead22d76b6db4567c756b3cf25053e",
+      "side": "BUY",
+      "asset": "9657909998979877091278650707068728026690513263512374491638605681382706085161",
+      "conditionId": "0x0b195a4c971f00b6935ffa15d629b377fc6dc340f3a9763207badcc8bb21393c",
+      "size": 6780.43,
+      "price": 0.8934373041,
+      "timestamp": 1791736462,
+      "title": "Counter-Strike: Vitality vs MOUZ - Map 2 Winner",
+      "slug": "cs2-vit-mouz-2026-10-11-game2",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/counter-strike-image-16c415c538.png",
+      "eventSlug": "cs2-vit-mouz-2026-10-11",
+      "outcome": "Vitality",
+      "outcomeIndex": 0,
+      "name": "467j6yj",
+      "pseudonym": "Scary-Pearl",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0x96f228f9ee1f38d115e17f6efc265d56c3c11d57ad160bdfeb86fc6f3015b6ce"
+    },
+    {
+      "proxyWallet": "0xc789d1196769518a3c8d15c61cdc6415e40d1a62",
+      "side": "BUY",
+      "asset": "60143237188703659017452588525078734930304517771425746166745606639077190550683",
+      "conditionId": "0x95676d1e6c33b1043687a95d03f567990ee82434e13dc453973c3e979bf3f42c",
+      "size": 81484.89,
+      "price": 0.6,
+      "timestamp": 1791736434,
+      "title": "Will Manchester City FC win on 2026-10-11?",
+      "slug": "epl-liv-mac-2026-10-11-mac",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/premier+league.jpg",
+      "eventSlug": "epl-liv-mac-2026-10-11",
+      "outcome": "No",
+      "outcomeIndex": 1,
+      "name": "tikstt2",
+      "pseudonym": "Forceful-Cupola",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0xac08fbbc1942f132b19aada5704853e29b22b538b5856189a9e44803035083df"
+    },
+    {
+      "proxyWallet": "0x41cdf6d55d7aa18f6907321110b7b803c6741e8c",
+      "side": "SELL",
+      "asset": "100741494720227997942059320684054085947750594102834739428422170461278695013039",
+      "conditionId": "0x043fb9c6e032171863f5cf0e73709e8e0302bfcaec1dde5cc9af1b0898d99a8f",
+      "size": 6365.44,
+      "price": 0.999,
+      "timestamp": 1791736408,
+      "title": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
+      "slug": "dota2-ty-ts8-2026-10-11-game2",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/dota2-7ffacddb21.jpg",
+      "eventSlug": "dota2-ty-ts8-2026-10-11",
+      "outcome": "Team Yandex",
+      "outcomeIndex": 0,
+      "name": "q7662504",
+      "pseudonym": "Impolite-Graph-Custard",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0x3374f178c878018c5ef8386b1a5052745a54119a56dcd157c18546311c43f87f"
+    },
+    {
+      "proxyWallet": "0x4a8c5435f8a1260e2673616de311854889b56d47",
+      "side": "BUY",
+      "asset": "84846382165343032223975853870946110241285484772019446686866815597350660955868",
+      "conditionId": "0x46f2f457e14ee9021ebd0ef4c27eacd98fdceaf7f2938b484e2551e9e3275ae8",
+      "size": 25191.37,
+      "price": 0.2232746651,
+      "timestamp": 1791736335,
+      "title": "Will Édouard Philippe win the 2027 French presidential election?",
+      "slug": "will-douard-philippe-win-the-2027-french-presidential-election",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-douard-philippe-win-the-2027-french-presidential-election-ypj2C7J2t8lv.jpg",
+      "eventSlug": "next-french-presidential-election",
+      "outcome": "Yes",
+      "outcomeIndex": 0,
+      "name": "zibaronovitch",
+      "pseudonym": "Sentimental-Nutrition",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0x4b06a538fe9748e7346c857d2777c138bf6d9ac62c50e4462d970e3d1dbb008b"
+    },
+    {
+      "proxyWallet": "0x27989d8c715acc53e921ea0950ee97306b590b7d",
+      "side": "SELL",
+      "asset": "96145609193176777440178999725173342481318362121738596816503836427084633480555",
+      "conditionId": "0x04135941a6bd2387a89623b8b192d5fd0c542dffca500a3ff091c55f3ad404a1",
+      "size": 97362.65,
+      "price": 0.76,
+      "timestamp": 1791736282,
+      "title": "Will Liverpool FC win on 2026-10-11?",
+      "slug": "epl-liv-mac-2026-10-11-liv",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/premier+league.jpg",
+      "eventSlug": "epl-liv-mac-2026-10-11",
+      "outcome": "No",
+      "outcomeIndex": 1,
+      "name": "1827575782",
+      "pseudonym": "Hoarse-Enactment-Tournament",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0xf4da081288ab91819549606a8a7387b6fe94ea786337635fff7d85af51e273dd"
+    },
+    {
+      "proxyWallet": "0x09bed1976600971fd9f9db454a9c302c7a559c32",
+      "side": "BUY",
+      "asset": "24261124572382990435422440280077932984509797145290804268247951919665283780003",
+      "conditionId": "0xa3da83bddf53ec1b76d6b47b9f787de6171c839d18f1ed45c252897228c080c1",
+      "size": 8625,
+      "price": 0.969026087,
+      "timestamp": 1791736254,
+      "title": "Will AJ Auxerre win on 2026-10-11?",
+      "slug": "fl1-ren-aja-2026-10-11-aja",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-fl1.png",
+      "eventSlug": "fl1-ren-aja-2026-10-11",
+      "outcome": "No",
+      "outcomeIndex": 1,
+      "name": "Momo63",
+      "pseudonym": "Forked-Pricing",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0xe7c4aa8d0c19f579f1402222053832bbe3fb089b192fb7c0147123c2371e423a"
+    },
+    {
+      "proxyWallet": "0x9c16127eccf031df45461ef1e04b52ea286a09cb",
+      "side": "BUY",
+      "asset": "101195760256917415670354466847708920654581836820628183985239725701856011837256",
+      "conditionId": "0x71ef80170c773844ab94a1284492c7417c206ab802ca62fba71117bde5c8d7f8",
+      "size": 46532.99,
+      "price": 0.47,
+      "timestamp": 1791736246,
+      "title": "Colts vs. Steelers: O/U 42.5",
+      "slug": "nfl-ind-pit-2026-10-11-total-42pt5",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nfl.png",
+      "eventSlug": "nfl-ind-pit-2026-10-11",
+      "outcome": "Over",
+      "outcomeIndex": 0,
+      "name": "Vanchalkenstein",
+      "pseudonym": "Gregarious-Fireman",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0x714625271f5a8e06208144fbaa18b81460498a3e0522051399d18b7f47dc0258"
+    },
+    {
+      "proxyWallet": "0xdf17f4a8dd01a4cfa6fc3da323a2baee5f8697d1",
+      "side": "BUY",
+      "asset": "50379211427933296182500444034485500186701864749431836861731464279098848117788",
+      "conditionId": "0xb261d3c560c4fc9ea877a0530733031da84a1b87479d8c8a8d603f5707095cd3",
+      "size": 9605.1,
+      "price": 0.997,
+      "timestamp": 1791736237,
+      "title": "NBA: Stephen Curry to leave Warriors?",
+      "slug": "nba-stephen-curry-to-leave-warriors",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nba-stephen-curry-to-leave-warriors-QN6qkhRXEA-l.png",
+      "eventSlug": "nba-stephen-curry-to-leave-warriors",
+      "outcome": "No",
+      "outcomeIndex": 1,
+      "name": "ED99999",
+      "pseudonym": "Cheerful-Ephemera",
+      "bio": "",
+      "profileImage": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1545882-f6db62db-a3cf-48af-a75b-8a4689869cb4.png",
+      "profileImageOptimized": "",
+      "transactionHash": "0x5da304f7954af38a23489b63f9dda89f30b48c28cd4e174e52eb6adeccf90af6"
+    },
+    {
+      "proxyWallet": "0xd3911bd5e070c9ad9a9519c966347802d8f3b109",
+      "side": "BUY",
+      "asset": "71462768397553146469383467018126229105771226482860187171629765338722978480419",
+      "conditionId": "0x9d2d3d4b9603ac94206b1effd92298e9ac9757af93412defd61f6a5a996f76d7",
+      "size": 13236.765881,
+      "price": 0.6714631111,
+      "timestamp": 1791736231,
+      "title": "Will Real Betis Balompié win on 2026-10-11?",
+      "slug": "lal-bet-osa-2026-10-11-bet",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-lal.png",
+      "eventSlug": "lal-bet-osa-2026-10-11",
+      "outcome": "Yes",
+      "outcomeIndex": 0,
+      "name": "lfg100k",
+      "pseudonym": "New-Sickness",
+      "bio": "",
+      "profileImage": "",
+      "profileImageOptimized": "",
+      "transactionHash": "0xa818b0209ef84f661e895f0beba8cb6aa2409a325463fd5b0be4c3940af45538"
+    }
+  ],
+  "book": {
+    "market": "0x043fb9c6e032171863f5cf0e73709e8e0302bfcaec1dde5cc9af1b0898d99a8f",
+    "asset_id": "100741494720227997942059320684054085947750594102834739428422170461278695013039",
+    "timestamp": "1791736519567",
+    "hash": "f554987c82a39b3ed6624c403a2e5ac88c1ce86a",
+    "bids": [
+      {
+        "price": "0.001",
+        "size": "104999"
+      },
+      {
+        "price": "0.006",
+        "size": "25000"
+      },
+      {
+        "price": "0.01",
+        "size": "77124.99"
+      },
+      {
+        "price": "0.011",
+        "size": "55555"
+      },
+      {
+        "price": "0.02",
+        "size": "65281.5"
+      },
+      {
+        "price": "0.03",
+        "size": "8946.57"
+      },
+      {
+        "price": "0.04",
+        "size": "12725"
+      },
+      {
+        "price": "0.05",
+        "size": "14934"
+      },
+      {
+        "price": "0.06",
+        "size": "5300"
+      },
+      {
+        "price": "0.061",
+        "size": "5000"
+      },
+      {
+        "price": "0.062",
+        "size": "38994.92"
+      },
+      {
+        "price": "0.07",
+        "size": "714.28"
+      },
+      {
+        "price": "0.08",
+        "size": "2000"
+      },
+      {
+        "price": "0.09",
+        "size": "5110.99"
+      },
+      {
+        "price": "0.1",
+        "size": "647.57"
+      },
+      {
+        "price": "0.106",
+        "size": "100"
+      },
+      {
+        "price": "0.108",
+        "size": "5000"
+      },
+      {
+        "price": "0.11",
+        "size": "6363.62"
+      },
+      {
+        "price": "0.12",
+        "size": "11351.65"
+      },
+      {
+        "price": "0.121",
+        "size": "19207.75"
+      },
+      {
+        "price": "0.13",
+        "size": "7715.38"
+      },
+      {
+        "price": "0.14",
+        "size": "3578.42"
+      },
+      {
+        "price": "0.15",
+        "size": "7033.32"
+      },
+      {
+        "price": "0.151",
+        "size": "5500"
+      },
+      {
+        "price": "0.16",
+        "size": "3437.5"
+      },
+      {
+        "price": "0.17",
+        "size": "11470.56"
+      },
+      {
+        "price": "0.18",
+        "size": "4544.43"
+      },
+      {
+        "price": "0.182",
+        "size": "2000"
+      },
+      {
+        "price": "0.19",
+        "size": "3157.88"
+      },
+      {
+        "price": "0.2",
+        "size": "4600"
+      },
+      {
+        "price": "0.21",
+        "size": "3392.52"
+      },
+      {
+        "price": "0.22",
+        "size": "1564.09"
+      },
+      {
+        "price": "0.221",
+        "size": "100"
+      },
+      {
+        "price": "0.234",
+        "size": "11152.68"
+      },
+      {
+        "price": "0.24",
+        "size": "2083.33"
+      },
+      {
+        "price": "0.241",
+        "size": "5000"
+      },
+      {
+        "price": "0.25",
+        "size": "2200"
+      },
+      {
+        "price": "0.26",
+        "size": "769.23"
+      },
+      {
+        "price": "0.27",
+        "size": "1783.31"
+      },
+      {
+        "price": "0.28",
+        "size": "535.71"
+      },
+      {
+        "price": "0.281",
+        "size": "1000"
+      },
+      {
+        "price": "0.29",
+        "size": "10"
+      },
+      {
+        "price": "0.3",
+        "size": "2766.66"
+      },
+      {
+        "price": "0.301",
+        "size": "8278.96"
+      },
+      {
+        "price": "0.31",
+        "size": "50"
+      },
+      {
+        "price": "0.32",
+        "size": "500"
+      },
+      {
+        "price": "0.34",
+        "size": "50"
+      },
+      {
+        "price": "0.35",
+        "size": "2128.85"
+      },
+      {
+        "price": "0.36",
+        "size": "10"
+      },
+      {
+        "price": "0.4",
+        "size": "640"
+      },
+      {
+        "price": "0.41",
+        "size": "1308.16"
+      },
+      {
+        "price": "0.42",
+        "size": "170"
+      },
+      {
+        "price": "0.44",
+        "size": "11.36"
+      },
+      {
+        "price": "0.46",
+        "size": "50"
+      },
+      {
+        "price": "0.48",
+        "size": "30"
+      },
+      {
+        "price": "0.49",
+        "size": "102.51"
+      },
+      {
+        "price": "0.499",
+        "size": "100"
+      },
+      {
+        "price": "0.5",
+        "size": "4377.89"
+      },
+      {
+        "price": "0.501",
+        "size": "500"
+      },
+      {
+        "price": "0.502",
+        "size": "1500"
+      },
+      {
+        "price": "0.51",
+        "size": "750"
+      },
+      {
+        "price": "0.52",
+        "size": "434"
+      },
+      {
+        "price": "0.53",
+        "size": "2074.86"
+      },
+      {
+        "price": "0.54",
+        "size": "1577.77"
+      },
+      {
+        "price": "0.55",
+        "size": "400"
+      },
+      {
+        "price": "0.56",
+        "size": "141.99"
+      },
+      {
+        "price": "0.57",
+        "size": "887"
+      },
+      {
+        "price": "0.59",
+        "size": "650.84"
+      },
+      {
+        "price": "0.6",
+        "size": "1065"
+      },
+      {
+        "price": "0.61",
+        "size": "660"
+      },
+      {
+        "price": "0.63",
+        "size": "31"
+      },
+      {
+        "price": "0.64",
+        "size": "38643.39"
+      },
+      {
+        "price": "0.65",
+        "size": "104"
+      },
+      {
+        "price": "0.66",
+        "size": "56"
+      },
+      {
+        "price": "0.67",
+        "size": "890.01"
+      },
+      {
+        "price": "0.68",
+        "size": "43"
+      },
+      {
+        "price": "0.69",
+        "size": "7.24"
+      },
+      {
+        "price": "0.7",
+        "size": "100"
+      },
+      {
+        "price": "0.71",
+        "size": "686"
+      },
+      {
+        "price": "0.73",
+        "size": "27"
+      },
+      {
+        "price": "0.75",
+        "size": "60"
+      },
+      {
+        "price": "0.76",
+        "size": "26"
+      },
+      {
+        "price": "0.767",
+        "size": "60"
+      },
+      {
+        "price": "0.768",
+        "size": "902.02"
+      },
+      {
+        "price": "0.769",
+        "size": "60"
+      },
+      {
+        "price": "0.77",
+        "size": "60"
+      },
+      {
+        "price": "0.79",
+        "size": "24"
+      },
+      {
+        "price": "0.8",
+        "size": "590"
+      },
+      {
+        "price": "0.81",
+        "size": "24"
+      },
+      {
+        "price": "0.82",
+        "size": "20"
+      },
+      {
+        "price": "0.85",
+        "size": "30"
+      },
+      {
+        "price": "0.86",
+        "size": "235.71"
+      },
+      {
+        "price": "0.87",
+        "size": "98.95"
+      },
+      {
+        "price": "0.89",
+        "size": "50"
+      },
+      {
+        "price": "0.9",
+        "size": "505"
+      },
+      {
+        "price": "0.94",
+        "size": "183.33"
+      },
+      {
+        "price": "0.95",
+        "size": "367.5"
+      },
+      {
+        "price": "0.96",
+        "size": "50"
+      },
+      {
+        "price": "0.97",
+        "size": "140"
+      },
+      {
+        "price": "0.98",
+        "size": "100"
+      },
+      {
+        "price": "0.99",
+        "size": "274777.08"
+      },
+      {
+        "price": "0.991",
+        "size": "597"
+      },
+      {
+        "price": "0.995",
+        "size": "5.05"
+      },
+      {
+        "price": "0.999",
+        "size": "2260625.3"
+      }
+    ],
+    "asks": [],
+    "min_order_size": "5",
+    "tick_size": "0.001",
+    "neg_risk": false,
+    "last_trade_price": "0.999"
+  },
+  "sampleAsset": "100741494720227997942059320684054085947750594102834739428422170461278695013039"
+}

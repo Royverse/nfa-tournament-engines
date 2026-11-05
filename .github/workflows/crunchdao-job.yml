@@ -1,0 +1,78 @@
+name: CrunchDAO — job
+
+# Reusable job behind CrunchDAO tournament workflows.
+# Runs the quantitative ML engine in crunchdao/ on a GitHub runner.
+
+on:
+  workflow_call:
+    inputs:
+      command:
+        type: string
+        required: true
+        default: 'run'
+      competition:
+        type: string
+        required: false
+        default: 'datacrunch-2'
+      model:
+        type: string
+        required: false
+        default: 'royverse'
+      force:
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  crunchdao:
+    name: CrunchDAO · ${{ inputs.command }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    concurrency:
+      group: crunchdao-${{ inputs.competition }}-${{ inputs.model }}-${{ inputs.command }}
+      cancel-in-progress: false
+    defaults:
+      run:
+        working-directory: crunchdao
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: crunchdao
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: crunchdao/requirements.txt
+
+      - name: Cache trained model
+        uses: actions/cache@v4
+        with:
+          path: crunchdao/resources
+          key: crunchdao-model-ensemble-${{ hashFiles('crunchdao/nfa_crunchdao/config.py', 'crunchdao/nfa_crunchdao/model.py') }}
+
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Run CrunchDAO Pipeline
+        env:
+          COMMAND: ${{ inputs.command }}
+          COMPETITION: ${{ inputs.competition }}
+          CRUNCHDAO_MODEL: ${{ inputs.model }}
+          FORCE: ${{ inputs.force }}
+          CRUNCHDAO_TOKEN: ${{ secrets.CRUNCH_API_KEY || secrets.CRUNCHDAO_TOKEN }}
+        run: |
+          case "$COMMAND" in
+            run)
+              set -- run --competition "$COMPETITION" --model "$CRUNCHDAO_MODEL"
+              if [ "$FORCE" = "true" ]; then set -- "$@" --force; fi
+              ;;
+            test) set -- test ;;
+            smoke) set -- smoke ;;
+            status) set -- status ;;
+            *) echo "Unknown command: $COMMAND"; exit 2 ;;
+          esac
+          python -m nfa_crunchdao.cli "$@"

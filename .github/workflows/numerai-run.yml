@@ -1,0 +1,32 @@
+name: Numerai — run
+
+# Submits model predictions for Numerai Classic (Tournament 8).
+# Runs on weekend and mid-week round openings, with a daily safety-net check.
+
+on:
+  schedule:
+    # Saturday 18:30 UTC — main weekend round open
+    - cron: '30 18 * * 6'
+    # Daily weekday round opening at 13:00 UTC (Tuesday through Saturday)
+    - cron: '0 13 * * 2-6'
+    # Daily safety net at 06:15 UTC (bot skips automatically if already submitted)
+    - cron: '15 6 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force upload even if already submitted for round'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    uses: ./.github/workflows/numerai-job.yml
+    with:
+      command: run
+      model: royverse
+      force: ${{ inputs.force || false }}
+    secrets: inherit

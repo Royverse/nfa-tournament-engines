@@ -1,0 +1,40 @@
+name: Forecaster — run
+
+# Forecasts every open, not-yet-forecast question in the FutureEval tournament
+# and MiniBench, and publishes. Two ways it starts:
+#   1. The Netlify watcher in the web app (every 10 min) calls
+#      workflow_dispatch the moment a question is waiting. This is the primary
+#      trigger.
+#   2. A safety-net run every hour, in case the watcher is down (for example
+#      its FORECASTER_GITHUB_TOKEN expired). Main-tournament questions stay
+#      open about 1.5 hours, so an hourly run lands inside every window.
+#
+# This repo is public, so GitHub-hosted runner minutes are free. The engines
+# moved here from the private app repo on 2026-11-05, after its 2,000-minute
+# monthly cap ran out on 2026-10-28 and refused 259 forecast runs.
+
+on:
+  schedule:
+    - cron: '37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  v1:
+    uses: ./.github/workflows/forecaster-job.yml
+    with:
+      variant: v1
+      command: run
+    secrets: inherit
+
+  # Optional challenger bot on its own Metaculus account (METACULUS_TOKEN_V2),
+  # tuned through FORECASTER_V2_* variables. Off unless FORECASTER_V2_ENABLED=true.
+  v2:
+    if: vars.FORECASTER_V2_ENABLED == 'true'
+    uses: ./.github/workflows/forecaster-job.yml
+    with:
+      variant: v2
+      command: run
+    secrets: inherit

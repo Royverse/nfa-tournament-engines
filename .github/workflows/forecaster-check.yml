@@ -1,0 +1,32 @@
+name: Forecaster — check
+
+# Run by hand from the Actions tab.
+#   smoke                test every key and service; forecasts nothing
+#   dry-run              forecast 3 bot-testing-area questions, publish nothing,
+#                        show the full reasoning in the run summary
+#   dry-run-and-publish  same, but post the forecasts to the testing area
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: What to check
+        type: choice
+        options: [smoke, dry-run, dry-run-and-publish]
+        default: smoke
+      variant:
+        description: Which bot
+        type: choice
+        options: [v1, v2]
+        default: v1
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    uses: ./.github/workflows/forecaster-job.yml
+    with:
+      variant: ${{ inputs.variant }}
+      command: ${{ inputs.mode }}
+    secrets: inherit

@@ -1,0 +1,6 @@
+# Runtime dependencies of the forecaster engine (GitHub Actions installs these).
+# forecasting-tools is Metaculus's own bot library; bump it deliberately each
+# season (it carries the current tournament IDs and API rule changes), then run
+# the "Forecaster — smoke test" workflow before trusting a live run.
+forecasting-tools==0.3.1
+requests>=2.32,<3

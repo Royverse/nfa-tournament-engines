@@ -1,0 +1,23 @@
+# Credentials never belong in this public repo. The crunch CLI keeps its login
+# under .crunchdao/; local runs read keys from .env files.
+.env*
+**/.crunchdao/
+**/.crunch/
+**/*token*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Engine data and trained models (rebuilt or cached by the workflows)
+numerai/data/
+numerai/models/
+crunchdao/**/data/
+crunchdao/resources/*.joblib
+crunchdao/resources/*.lgb
+crunchdao/resources/*.txt
+*.parquet
+*.csv
+*.log

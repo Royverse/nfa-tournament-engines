@@ -1,0 +1,112 @@
+{
+  "events": [
+    {
+      "slug": "fed-rate-cut-by-629",
+      "title": "Fed rate cut by...?",
+      "endDate": "2028-01-29T04:59:00Z",
+      "markets": [
+        {
+          "id": "949492",
+          "question": "Fed rate cut by January 2026 meeting?",
+          "slug": "fed-rate-cut-by-january-2026-meeting-412",
+          "endDate": "2026-01-28T00:00:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0\", \"1\"]",
+          "volume": "588114.763678",
+          "volumeNum": 588114.763678,
+          "active": true,
+          "closed": true
+        },
+        {
+          "id": "949493",
+          "question": "Fed rate cut by March 2026 meeting?",
+          "slug": "fed-rate-cut-by-march-2026-meeting",
+          "endDate": "2026-03-18T00:00:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0\", \"1\"]",
+          "active": true,
+          "closed": true
+        },
+        {
+          "id": "949494",
+          "question": "Fed rate cut by April 2026 meeting?",
+          "slug": "fed-rate-cut-by-april-2026-meeting",
+          "endDate": "2026-04-29T00:00:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0\", \"1\"]",
+          "volume": "542979.3072430016",
+          "volumeNum": 542979.3072430016,
+          "active": true,
+          "closed": true
+        },
+        {
+          "id": "949495",
+          "question": "Fed rate cut by June 2026 meeting?",
+          "slug": "fed-rate-cut-by-june-2026-meeting",
+          "endDate": "2026-06-17T00:00:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0\", \"1\"]",
+          "volume": "784968.3769240015",
+          "volumeNum": 784968.3769240015,
+          "active": true,
+          "closed": true
+        }
+      ]
+    },
+    {
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "title": "How many Fed rate cuts in 2026?",
+      "endDate": "2027-01-01T04:59:00Z",
+      "markets": [
+        {
+          "id": "616902",
+          "question": "Will no Fed rate cuts happen in 2026?",
+          "slug": "will-no-fed-rate-cuts-happen-in-2026",
+          "endDate": "2027-01-01T04:59:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0.9695\", \"0.0305\"]",
+          "volume": "8580705.963709997",
+          "volumeNum": 8580705.963709997,
+          "active": true,
+          "closed": false
+        },
+        {
+          "id": "616903",
+          "question": "Will 1 Fed rate cut happen in 2026?",
+          "slug": "will-1-fed-rate-cut-happen-in-2026",
+          "endDate": "2027-01-01T04:59:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0.0155\", \"0.9845\"]",
+          "volume": "3380719.0477240006",
+          "volumeNum": 3380719.0477240006,
+          "active": true,
+          "closed": false
+        },
+        {
+          "id": "616904",
+          "question": "Will 2 Fed rate cuts happen in 2026?",
+          "slug": "will-2-fed-rate-cuts-happen-in-2026",
+          "endDate": "2027-01-01T04:59:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0.0065\", \"0.9935\"]",
+          "volume": "3294038.73759",
+          "volumeNum": 3294038.73759,
+          "active": true,
+          "closed": false
+        },
+        {
+          "id": "616905",
+          "question": "Will 3 Fed rate cuts happen in 2026?",
+          "slug": "will-3-fed-rate-cuts-happen-in-2026",
+          "endDate": "2027-01-01T04:59:00Z",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "outcomePrices": "[\"0.003\", \"0.997\"]",
+          "volume": "2937464.2890250003",
+          "volumeNum": 2937464.2890250003,
+          "active": true,
+          "closed": false
+        }
+      ]
+    }
+  ]
+}
