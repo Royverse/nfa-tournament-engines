@@ -48,3 +48,15 @@ Optional: `METACULUS_TOKEN_V2` (challenger bot), `ASKNEWS_API_KEY` /
   forecasts nothing; `dry-run` forecasts 3 bot-testing-area questions and
   publishes nothing.
 - `Forecaster — CI` runs the unit tests on every push and pull request.
+
+## Running locally (Windows)
+
+Put the keys in `.env.local` at the repo root (git-ignored), then:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/run-forecaster.ps1 smoke
+powershell -ExecutionPolicy Bypass -File scripts/run-forecaster.ps1 test 3
+```
+
+`test` forecasts bot-testing-area questions and publishes nothing unless you
+add `-Publish`. The script uses [uv](https://docs.astral.sh/uv/).
